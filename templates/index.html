@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center min-vh-100">
+
+            <!-- Left Content -->
+            <div class="col-lg-6 text-center text-lg-start">
+                <h5 class="hero-subtitle">City Hospital</h5>
+
+                <h1 class="hero-title">
+                    Best Medical And <br>
+                    Health Care Center <br>
+                    in Malappuram
+                </h1>
+
+                <p class="hero-text">
+                    Founded in 1989 with an aim to promote wellness and provide
+                    healthcare for all with the best kinds of medical services.
+                    We are committed to delivering quality treatment with
+                    experienced doctors and advanced healthcare facilities.
+                </p>
+
+                <a href="{% url 'booking' %}" class="btn hero-btn">
+                    Book Appointment
+                </a>
+            </div>
+
+            <!-- Right Image -->
+            <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                <img src="{% static 'images/car5.JFIF' %}"
+                     class="img-fluid hero-img"
+                     alt="Doctors">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

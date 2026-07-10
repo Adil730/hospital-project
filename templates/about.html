@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block title %}
+About
+{% endblock %}
+
+{% block content %}
+
+<div class="container my-5">
+
+    <div class="row align-items-center">
+
+        <!-- Image -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800"
+                 class="img-fluid rounded shadow"
+                 alt="Hospital">
+        </div>
+
+        
+        <div class="col-lg-6">
+
+            <h2 class="fw-bold mb-4">Welcome to City Hospital</h2>
+
+            <p>
+                City Hospital is committed to providing exceptional healthcare
+                services with compassion, excellence, and integrity. Our
+                experienced doctors, skilled nurses, and dedicated staff work
+                together to ensure the best possible care for every patient.
+            </p>
+
+            <p>
+                We offer a wide range of medical services including General
+                Medicine, Pediatrics, Neurology, Cardiology, Orthopedics,
+                and Emergency Care. Our modern facilities and advanced
+                medical technology help us deliver quality treatment in a
+                safe and comfortable environment.
+            </p>
+
+            <p>
+                Our mission is to improve the health and well-being of our
+                community through patient-centered care, innovation, and
+                medical excellence.
+            </p>
+
+            <a href="{% url 'booking' %}" class="btn btn-primary mt-3">
+                Book an Appointment
+            </a>
+
+        </div>
+
+    </div>
+
+    <hr class="my-5">
+
+    <!-- Statistics -->
+    <div class="row text-center">
+
+        <div class="col-12 col-md-4 mb-4">
+            <h2 class="text-primary fw-bold">20+</h2>
+            <p>Experienced Doctors</p>
+        </div>
+
+        <div class="col-12 col-md-4 mb-4">
+            <h2 class="text-primary fw-bold">10,000+</h2>
+            <p>Happy Patients</p>
+        </div>
+
+        <div class="col-12 col-md-4 mb-4">
+            <h2 class="text-primary fw-bold">24/7</h2>
+            <p>Emergency Service</p>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
